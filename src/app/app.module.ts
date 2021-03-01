@@ -7,6 +7,13 @@ import { FindFormComponent } from './find-form/find-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NgProgressModule } from '@ngx-progressbar/core';
+
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { FormsModule } from '@angular/forms';
+
 import { HoverDirective } from './hover.directive';
 import { DatePipePipe } from './date-pipe.pipe';
 
@@ -22,7 +29,11 @@ import { DatePipePipe } from './date-pipe.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { HoverDirective } from './hover.directive';
+import { DatePipePipe } from './date-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HoverDirective } from './hover.directive';
     NavbarComponent,
     RepoComponent,
     UserComponent,
-    HoverDirective
+    HoverDirective,
+    DatePipePipe
   ],
   imports: [
     BrowserModule,
